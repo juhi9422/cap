@@ -1,0 +1,50 @@
+.asset{
+    border: double 2px #0174b0;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    width: 13em;
+    background-color: #0173b014;
+    margin: 10px;
+    margin-top: 30px;
+    transition: 1s;
+
+   
+}
+.asset:hover .animation_bg{
+
+    /* background-color: aqua; */
+    height: 40px;
+
+   
+}
+
+.animation_bg{
+    transition: 1s;
+    height: 0px;
+    width: 14.5%;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 112, 173, 0.438) 0%,
+        rgba(18, 172, 219, 0.39) 100%
+      );
+    z-index: -1;
+    position: absolute;
+}
+.img_asset {
+    width: 40px;
+    object-fit: cover;
+}
+.content_asset{
+    padding-top: 4px;
+    padding-left: 13px;
+    font-size: 20px;
+}
+.co{
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+}
+.img_arrow{
+    width: 10px;
+}

@@ -1,0 +1,150 @@
+.first_cap{
+  background-image: url("../Images/work3.jpg");
+  background-repeat: no-repeat;
+  height: 330px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+
+
+.capheading_cap{
+color: rgb(255, 255, 255);
+text-shadow: 0 2px 4px rgb(0, 0, 0);
+font-size: 3rem;
+margin-bottom: 60px;
+}
+
+.con_cap{
+width: 600px;
+max-width: 700px;
+background: rgba(255, 254, 254, 0.893);
+align-items: center;
+border-radius: 60px;
+padding: 0 10px 0 15px;
+backdrop-filter: blur(7px) saturate(110%);
+border-width:1px;
+border-style:solid;
+border-color:rgba(78, 76, 71, 0.904);
+box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.932);
+}
+
+.rectangle{
+  display: flex;
+}
+
+.inputbox_cap{
+background: transparent;
+flex: 1;
+border: 0;
+outline: none;
+padding: 15px 80px 15px 10px;
+font-size: 20px;
+}
+::placeholder{
+color: rgba(66, 64, 64, 0.801);
+}
+.searchimg{
+opacity: 0.7;
+width: 20px;
+}
+
+.button_cap{
+font-size: 80%;
+color: rgb(254, 252, 252);
+text-shadow: 0 2px 4px rgb(178, 176, 176);
+border: 0;
+background:  #38a1f7db;
+border-radius: 50px;
+width: 93px ;
+height: 40px;
+cursor: pointer;
+margin-left: 70px;
+margin-bottom: 2px;
+box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.495);
+}
+.search_button_cap{
+  width: 20px;
+  height: 25px;
+  object-fit: contain;
+}
+.button_cap:hover{
+background:  #1d76bf;
+box-shadow: 0.1px 1px 7px rgba(76, 75, 75, 0.961);
+transition: 0.35s;
+}
+
+.cardmarketplace_cap {
+order: 1;
+height: 450px;
+width: 256px;
+border-radius: 5px;
+border: solid 1px rgba(148, 146, 146, 0.66);
+/* box-shadow: 0 100px 160px rgb(255, 253, 253),0 6px 20px */
+box-shadow: 0.1px 1px 20px rgba(76, 75, 75, 0.557);
+
+}
+
+.cardmbody_cap{
+/* padding: 10px; */
+margin-left: 15px;
+margin-right: 15px;
+
+}
+
+.marketp_cap{
+position: relative;
+text-align: left;
+font-size: 100%;
+margin-top: 10px;
+margin-bottom: 12px;
+}
+
+.imagemp_cap{
+position: relative;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+/* border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px; */
+vertical-align: middle;
+height: 210px;
+width: 100%;
+margin-top: 0;
+/* margin: 20px 30px 10px 30px; */
+
+}
+
+.cardh2_cap{
+text-align: left;
+font-family: 'Roboto', sans-serif;
+margin-bottom: 0;
+font-size: 120%;
+
+}
+.cardh2_cap{
+text-align: center;
+font-family: 'Roboto', sans-serif;
+margin-bottom: 0;
+}
+
+.hr_cap{
+border-style: dotted none none;
+border-color: rgba(13, 13, 13, 0.308);
+border-width: 6px;
+width: 65%;
+margin-bottom: 6.5px;
+}
+.link_cap{
+font-size: large;
+/* color: rgba(52, 51, 51, 0.966); */
+color: rgb(8, 10, 130);
+cursor: pointer;
+}
+.link_cap:hover{
+/* color: rgb(16, 18, 140); */
+color: rgb(8, 8, 8);
+}

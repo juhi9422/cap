@@ -1,0 +1,60 @@
+.cardS{
+    margin: 10px;
+    width: 220px;
+    height: 350px;
+    background-color: aquamarine;
+    background-image: url("../Images/bgS.png");
+    background-size: cover;
+    padding: 0px;
+    border-radius: 12px;
+}
+
+.contS{
+    margin-top: 130px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    height:calc(350px - 130px);
+    background-color: rgb(180, 209, 225);
+    transition: .5s;
+}
+
+.cardS:hover .contS{
+    margin-top: 120px;
+    height:calc(350px - 120px);
+    border-radius: 10px;
+    
+}
+
+.butnS{
+    float: right;
+    padding-right: 20px;
+    margin-top: -30px;
+    
+}
+
+.btnS{
+    -webkit-box-shadow: 0px 10px 14px -9px rgba(130,130,130,0.48);
+    -moz-box-shadow: 0px 10px 14px -9px rgba(130,130,130,0.48);
+    box-shadow: 0px 10px 14px -9px rgba(130,130,130,0.48);
+}
+
+.titleS{
+    padding-left: 20px !important;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.desS{
+    font-size: .9em;
+    height: 140px;
+    margin: 8px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 10px 14px -9px rgba(130,130,130,0.48);
+    -moz-box-shadow: 0px 10px 14px -9px rgba(130,130,130,0.48);
+    box-shadow: 0px 10px 14px -9px rgba(130,130,130,0.48);
+}
