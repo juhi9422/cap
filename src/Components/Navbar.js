@@ -8,7 +8,7 @@ import { FaSearch } from "react-icons/fa";
 const Navbar = () => {
   return (
     <>
-      {" "}
+      
       <nav className="Navbar p-3">
         <div className="row">
           <div className="col logo_section">
@@ -19,9 +19,9 @@ const Navbar = () => {
           </div>
           <div className="col profile">
             <div className="links_1">
-              <a href="/InnerPage">
+            
                 <li>Tutorial</li>
-              </a>
+              
               <li>Share ideas</li>
               <li>Contact</li>
             </div>

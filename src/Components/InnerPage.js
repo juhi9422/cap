@@ -1,10 +1,11 @@
 import React from "react";
+import InnerPageHead from "./InnerPageHead";
 import Tab from "./Tabs";
 
 const InnerPage=()=>{
     return(
         <>
-        <div className="container heading">MARKET PLACE</div>
+        <InnerPageHead  name={"Market Place"}/>
         <Tab/>
         </>
     )
