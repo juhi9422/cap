@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../Style/Navbar.css";
 import Chatbot from "./Chatbot";
 import bg from "../Images/cloud_bg.jpg";
@@ -11,7 +11,27 @@ import "../Style/Team.css";
 import Sstory from "./Sstory";
 import List from "./List";
 
+
 const Home = () => {
+
+  const off = useRef(null);
+  const ss = useRef(null);
+  const asset = useRef(null);
+  const team = useRef(null);
+
+  const offClick=()=>{
+    off.current?.scrollIntoView({behaviour: 'smooth'})
+  };
+  const assetClick=()=>{
+    asset.current?.scrollIntoView({behaviour: 'smooth'})
+  };
+  const ssClick=()=>{
+    ss.current?.scrollIntoView({behaviour: 'smooth'})
+  };
+  const teamClick=()=>{
+    team.current?.scrollIntoView({behaviour: 'smooth'})
+  };
+
   return (
     <>
       <div>
@@ -53,7 +73,61 @@ const Home = () => {
       {/* List */}
 
     <div>
-    <List/>
+    
+    <div className="container list_box">
+        <ul className="list">
+        <li className="lists">
+            <div className="list_item">Cloud Go To Market</div>
+            <div className="divs"></div>
+          </li>
+
+          <li className="lists">
+            <div className="list_item">
+              <div className="dropdown">
+                <div className="dropbtn">Cloud Framework</div>
+                <div className="dropdown_content">
+                  <a href="#">Insurance</a>
+                  <a href="#">Banking</a>
+                  <a href="#"> ERP</a>
+                  <a href="#">Play Book</a>
+                  <a href="#">Capability Deck</a>
+                  <a href="#"> Modification Tests</a>
+                </div>
+              </div>
+            </div>
+            <div className="divs"></div>
+          </li>
+{/* 
+          <li className="lists">
+            <div className="list_item">Cloud Framework</div>
+            <div className="divs"></div>
+          </li> */}
+          <li className="lists">
+            <div className="list_item" onClick={offClick}>Our Offerings</div>
+            <div className="divs"></div>
+          </li>
+          <li className="lists">
+            <div className="list_item" onClick={ssClick}>Success Stories</div>
+            <div className="divs"></div>
+          </li>
+          <li className="lists">
+            <div className="list_item">Capgemini Recognitions</div>
+            <div className="divs"></div>
+          </li>
+          <li className="lists">
+            <div className="list_item">Partnership with Hyperscalers</div>
+            <div className="divs"></div>
+          </li>
+          <li className="lists">
+            <div className="list_item" onClick={assetClick}>Assets</div>
+            <div className="divs"></div>
+          </li>
+          <li className="lists">
+            <div className="list_item" onClick={teamClick} >Teams & Contacts</div>
+            <div className="divs"></div>
+          </li>
+        </ul>
+      </div>
     </div>
     
 
@@ -69,14 +143,14 @@ const Home = () => {
 
       {/* Offering section */}
       <div>
-        <div className="container heading">OUR OFFERINGS & SOLUTIONS</div>
+        <div className="container heading" ref={off}>OUR OFFERINGS & SOLUTIONS</div>
         <div className="container">
           <Menu />
         </div>
       </div>
 
       <div>
-        <div className="container heading">SUCCESS STORIES </div>
+        <div className="container heading" ref={ss}>SUCCESS STORIES </div>
         <div className="container">
           <div className="row">
             <div className="col">
@@ -103,12 +177,12 @@ const Home = () => {
       </div>
 
       <div>
-        <div className="container heading">ASSET</div>
+        <div className="container heading" ref={asset}>ASSET</div>
         <Asset />
       </div>
 
       <div>
-        <div className="container heading">OUR TEAM</div>
+        <div className="container heading" ref={team}>OUR TEAM</div>
         <Team />
       </div>
 

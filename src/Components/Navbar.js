@@ -13,8 +13,8 @@ const Navbar = () => {
         <div className="row">
           <div className="col logo_section">
             <span>
-              <img src={Capgemini_logo} />
-              <img className="cap_logo" src={Logo} />
+              <a href="/"><img src={Capgemini_logo} /></a>
+              <a href="/"><img className="cap_logo" src={Logo} /></a>
             </span>
           </div>
           <div className="col profile">
@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="row">
           <div className="col">
             <div className="links_1">
-              <li>Home</li>
+              <li><a href="/">Home</a></li>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"

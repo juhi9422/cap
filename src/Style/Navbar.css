@@ -75,7 +75,7 @@
     90deg,
     #0070ad 0%,
     #12abdb 100%
-  );;
+  );
 }
 .dropdown-menu{
   border-color: #f8f9fa;
@@ -144,8 +144,9 @@
 .list {
   display: flex;
   list-style-type: none;
+  justify-content: space-between;
   align-items: center;
-  z-index: 1;
+  z-index: 1; 
 }
 .list_box {
   z-index: 1;
