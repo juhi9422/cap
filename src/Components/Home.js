@@ -10,6 +10,8 @@ import Team from "./Team";
 import "../Style/Team.css";
 import Sstory from "./Sstory";
 import List from "./List";
+import HyperScaler from "./HyperScaler";
+import Recognition from "./Recognition";
 
 
 const Home = () => {
@@ -18,6 +20,8 @@ const Home = () => {
   const ss = useRef(null);
   const asset = useRef(null);
   const team = useRef(null);
+  const hs = useRef(null);
+  const rec = useRef(null);
 
   const offClick=()=>{
     off.current?.scrollIntoView({behaviour: 'smooth'})
@@ -31,6 +35,14 @@ const Home = () => {
   const teamClick=()=>{
     team.current?.scrollIntoView({behaviour: 'smooth'})
   };
+  const hsClick=()=>{
+    hs.current?.scrollIntoView({behaviour: 'smooth'})
+  };
+
+  const recClick=()=>{
+    rec.current?.scrollIntoView({behaviour: 'smooth'})
+  };
+
 
   return (
     <>
@@ -111,11 +123,11 @@ const Home = () => {
             <div className="divs"></div>
           </li>
           <li className="lists">
-            <div className="list_item">Capgemini Recognitions</div>
+            <div className="list_item" onClick={recClick}>Capgemini Recognitions</div>
             <div className="divs"></div>
           </li>
           <li className="lists">
-            <div className="list_item">Partnership with Hyperscalers</div>
+            <div className="list_item" onClick={hsClick}>Partnership with Hyperscalers</div>
             <div className="divs"></div>
           </li>
           <li className="lists">
@@ -180,6 +192,21 @@ const Home = () => {
         <div className="container heading" ref={asset}>ASSET</div>
         <Asset />
       </div>
+
+<div>
+<div className="container heading" ref={hs}>OUR PARTNERSHIP WITH HYPERSCALERS</div>
+
+<HyperScaler/>
+  
+</div>
+
+<div>
+<div className="container heading" ref={rec}>Capgemini Recognitions</div>
+
+<Recognition/>
+  
+</div>
+
 
       <div>
         <div className="container heading" ref={team}>OUR TEAM</div>
