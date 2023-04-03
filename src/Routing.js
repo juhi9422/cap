@@ -5,11 +5,12 @@ import Chatbot from "./Components/Chatbot";
 import Home from "./Components/Home";
 import InnerPage from "./Components/InnerPage";
 import Navbar from "./Components/Navbar";
+import NavBarRes from "./Components/NavBarRes";
 
 const Routing = () => {
   return (
     <BrowserRouter>
-      <Navbar/>
+       <NavBarRes/>
       <Routes>
         <Route path="/" element={<Home />} /> 
          <Route path="/innerpage" element={<InnerPage />} />

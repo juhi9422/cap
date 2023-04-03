@@ -1,12 +1,7 @@
 import "./App.css";
-import Asset from "./Components/Assest";
-import Home from "./Components/Home";
-import Small from "./Components/Small";
-import Menu from "./Components/Menu";
-import InnerPage from "./Components/InnerPage";
 import Routing from "./Routing";
+import NavBarRes from "./Components/NavBarRes";
 import Navbar from "./Components/Navbar";
-import CapPage from "./Components/CapPage";
 
 
 function App() {
@@ -14,6 +9,7 @@ function App() {
     <>
     
       <Routing/>
+          
       
      
       

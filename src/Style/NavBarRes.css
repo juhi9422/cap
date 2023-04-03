@@ -1,0 +1,226 @@
+.navBar {
+  background-color: #e7e7e7;
+}
+.topitems a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+  padding-left: 20px;
+}
+.bottomItems a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
+.topitems li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottomItems li {
+  list-style: none;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vh 3vw 0vw 3vw;
+}
+
+.bLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.capLogo img {
+  width: 80px;
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 1.5px rgb(19, 78, 129) solid;
+}
+
+.cgLogo img {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.topitems {
+  display: flex;
+}
+
+.topitems ul {
+  display: flex;
+}
+.userSec {
+  display: flex;
+  align-items: center;
+}
+
+.usLogo {
+  font-size: 1.6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(133, 133, 133);
+}
+
+.dropDown {
+  font-size: 1em;
+  color: black;
+}
+
+.dropdown_item_nav {
+  padding: 4px 10px 4px 10px;
+  margin-right: 0px;
+}
+.dropdown_item_nav:hover {
+  color: #ffffff;
+  background-color: rgb(0, 112, 173);
+  background: linear-gradient(90deg, #0070ad 0%, #12abdb 100%);
+}
+.dropdown-menu {
+  border-color: #f8f9fa;
+  background-color: #f8f9fa;
+}
+
+.links_1 {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+}
+.links_1 a {
+  text-decoration: none;
+  color: black;
+}
+.dropdown-menu li {
+  padding-bottom: 10px;
+}
+
+.col {
+  display: grid;
+  align-items: center;
+  padding: 0px 20px 0px 20px;
+}
+
+.search {
+  width: 300px;
+  display: flex;
+  justify-content: end;
+}
+
+.bottomRow {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.mobile {
+  display: none;
+}
+
+.mobile-menu-link {
+  display: none;
+  transform-origin: top;
+  transition: 0.4s all ease-in-out;
+}
+
+.menu-link {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .cgLogoM img {
+    width: 40px;
+    padding-top: 0px;
+  }
+
+  .capLogo img {
+    width: 60px;
+  }
+
+  .topRow {
+    padding: 1vh 3vw 1vh 3vw;
+  }
+
+  .hamBg {
+    font-size: 1.8em;
+    display: flex;
+    color: #0070ad;
+  }
+
+  .hamBg:active {
+    font-size: 1.7em;
+  }
+
+  .mobile-menu-link {
+    background-color: #21449c;
+    display: block;
+  }
+
+  .mobile-menu-link {
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+  }
+
+  .links_1 {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .links_1 a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.1em;
+  }
+
+  .links_1 li {
+    margin-bottom: 10px;
+  }
+
+  .MnavItems li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  .MnavItems li {
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1.1em;
+    list-style: none;
+  }
+
+  .search {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dropdown-menu a {
+    text-decoration: none;
+    color: rgb(0, 0, 0) !important;
+    font-size: 0.8em;
+    padding: 0px;
+      }
+
+      .dropdown-menu li{
+        margin-bottom: 0px;
+        padding: 5px;
+      }
+}
