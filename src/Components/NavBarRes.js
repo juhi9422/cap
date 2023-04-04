@@ -254,7 +254,7 @@ const NavBarRes = () => {
                       </li>
                     </div>
                   </div>
-                  <div className="search">
+                  <div className="searchDiv">
                     <div className="search">
                       <form className="d-flex" role="search">
                         <input
@@ -264,7 +264,7 @@ const NavBarRes = () => {
                           aria-label="Search"
                         />
                         <button
-                          className="btn btn-outline-success btn-sm"
+                          className="btn btn-success btn-sm"
                           type="submit"
                         >
                           Search

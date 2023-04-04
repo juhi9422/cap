@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
-import "../Style/Navbar.css";
+import "../Style/HomeRes.css";
+import { IoIosArrowDropdownCircle } from "react-icons/io";
 import Chatbot from "./ChatBot";
 import bg from "../Images/cloud_bg.jpg";
 import Cards from "./Cards";
@@ -13,7 +14,7 @@ import List from "./List";
 import HyperScaler from "./HyperScaler";
 import Recognition from "./Recognition";
 
-const Home = () => {
+const HomeRes = () => {
   const off = useRef(null);
   const ss = useRef(null);
   const asset = useRef(null);
@@ -43,58 +44,52 @@ const Home = () => {
 
   return (
     <>
-      <div>
-        <div className="text">
-          <h1>Cloud Assurance Platform</h1>
+      <div className="cover">
+        <h1>Cloud Assurance Platform</h1>
+        <p>
+          A framework of proven methodologies, procedures and testing solutions
+          to help strategize, estimate and test your cloud adoption initiatives.
+        </p>
+      </div>
+      <div className="cDef">
+        <div className="defCard cd1">
+          <h2>What does it Offers?</h2>
           <p>
             A framework of proven methodologies, procedures and testing
             solutions to help strategize, estimate and test your cloud adoption
             initiatives.
           </p>
         </div>
-        <div className="d-flex justify-content-center">
-          <div className="row container-fluid intro_text ">
-            <div className="col intro_card1">
-              <h2>What does it Offers?</h2>
-              <p>
-                A framework of proven methodologies, procedures and testing
-                solutions to help strategize, estimate and test your cloud
-                adoption initiatives.
-              </p>
-            </div>
-            <div className="col intro_card2">
-              <h2>Key wins</h2>
-              <p>
-                Offers end-to-end Cloud Testing Services across hyperscalers,
-                supporting different migration patterns and cloud native
-                testing-as-a-service capabilities.
-              </p>
-            </div>
-            <div className="col intro_card1">
-              <h2>Events</h2>
-              <p>Upcoming events in the Cloud Testing arena</p>
-            </div>
-          </div>
+        <div className="defCard cd2">
+          <h2>Key wins</h2>
+          <p>
+            Offers end-to-end Cloud Testing Services across hyperscalers,
+            supporting different migration patterns and cloud native
+            testing-as-a-service capabilities.
+          </p>
         </div>
-        <div className="bg_img">
-          <img className="backgroung_img" src={bg} />
+        <div className="defCard cd1">
+          <h2>Events</h2>
+          <p>Upcoming events in the Cloud Testing arena</p>
         </div>
       </div>
 
-      {/* List */}
-
-      <div>
-        <div className="container list_box">
-          <ul className="list">
-            <li className="lists">
-              <div className="list_item">Cloud Go To Market</div>
+      <div className="listItem">
+        <div className="containerRes list_boxRes">
+          <ul className="listRes">
+            <li className="listsRes">
+              <div className="list_item">
+                Cloud Go <br /> To Market
+              </div>
               <div className="divs"></div>
             </li>
 
-            <li className="lists">
+            <li className="listsRes">
               <div className="list_item">
                 <div className="dropdown">
-                  <div className="dropbtn">Cloud Framework</div>
+                  <div className="dropbtn">
+                    Cloud <br /> Framework <IoIosArrowDropdownCircle />{" "}
+                  </div>
                   <div className="dropdown_content">
                     <a href="#">Insurance</a>
                     <a href="#">Banking</a>
@@ -107,44 +102,40 @@ const Home = () => {
               </div>
               <div className="divs"></div>
             </li>
-            {/* 
-          <li className="lists">
-            <div className="list_item">Cloud Framework</div>
-            <div className="divs"></div>
-          </li> */}
-            <li className="lists">
+
+            <li className="listsRes">
               <div className="list_item" onClick={offClick}>
-                Our Offerings
+                Our <br /> Offerings
               </div>
               <div className="divs"></div>
             </li>
-            <li className="lists">
+            <li className="listsRes">
               <div className="list_item" onClick={ssClick}>
-                Success Stories
+                Success <br /> Stories
               </div>
               <div className="divs"></div>
             </li>
-            <li className="lists">
+            <li className="listsRes">
               <div className="list_item" onClick={recClick}>
-                Capgemini Recognitions
+                Capgemini <br /> Recognitions
               </div>
               <div className="divs"></div>
             </li>
-            <li className="lists">
+            <li className="listsRes">
               <div className="list_item" onClick={hsClick}>
-                Partnership with Hyperscalers
+                Partnership <br /> with Hyperscalers
               </div>
               <div className="divs"></div>
             </li>
-            <li className="lists">
+            <li className="listsRes">
               <div className="list_item" onClick={assetClick}>
                 Assets
               </div>
               <div className="divs"></div>
             </li>
-            <li className="lists">
+            <li className="listsRes">
               <div className="list_item" onClick={teamClick}>
-                Teams & Contacts
+                Teams & <br /> Contacts
               </div>
               <div className="divs"></div>
             </li>
@@ -153,68 +144,64 @@ const Home = () => {
       </div>
 
       <div>
-        <div className="container heading">POPULAR CATEGORIES</div>
+        <div className="container headingRes">POPULAR CATEGORIES</div>
       </div>
 
-      <div className="container">
+      <div>
         <Cards />
       </div>
 
-      {/* Offering section */}
       <div>
-        <div className="container heading" ref={off}>
-          OUR OFFERINGS & SOLUTIONS
-        </div>
-        <div className="container">
-          <Menu />
-        </div>
+        <div className="container headingRes" ref={off}>OUR OFFERINGS & SOLUTIONS</div>
       </div>
 
       <div>
-        <div className="container heading" ref={ss}>
+        <Menu/>
+      </div>
+
+      <div className="container headingRes" ref={ss}>
           SUCCESS STORIES{" "}
         </div>
+
         <div className="container">
           <div className="row">
-            <div className="col">
+            <div className="col-12 col-lg-3 col-md-6 d-flex justify-content-center">
               <Sstory />
             </div>
-            <div className="col">
+            <div className="col-12 col-lg-3 col-md-6 d-flex justify-content-center">
               <Sstory />
             </div>
-            <div className="col">
+            <div className="col-12 col-lg-3 col-md-6 d-flex justify-content-center">
               <Sstory />
             </div>
-            <div className="col">
+            <div className="col-12 col-lg-3 col-md-6 d-flex justify-content-center">
               <Sstory />
             </div>
           </div>
         </div>
-      </div>
 
-      <div>
-        <div className="container heading">PARTNERSHIP & ALLIANCES</div>
+        <div>
+        <div className="container headingRes">PARTNERSHIP & ALLIANCES</div>
 
         <Small />
       </div>
-
       <div>
-        <div className="container heading" ref={asset}>
+        <div className="container headingRes" ref={asset}>
           ASSET
         </div>
         <Asset />
       </div>
 
       <div>
-        <div className="container heading" ref={hs}>
-          OUR PARTNERSHIP WITH HYPERSCALERS
+        <div className="container headingRes" ref={hs}>
+          OUR PARTNERSHIP WITH  HYPERSCALERS
         </div>
 
         <HyperScaler />
       </div>
 
       <div>
-        <div className="container heading" ref={rec}>
+        <div className="container headingRes" ref={rec}>
           Capgemini Recognitions
         </div>
 
@@ -222,7 +209,7 @@ const Home = () => {
       </div>
 
       <div>
-        <div className="container heading" ref={team}>
+        <div className="container headingRes" ref={team}>
           OUR TEAM
         </div>
         <Team />
@@ -230,4 +217,4 @@ const Home = () => {
     </>
   );
 };
-export default Home;
+export default HomeRes;

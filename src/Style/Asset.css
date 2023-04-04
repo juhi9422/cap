@@ -2,27 +2,39 @@
     border: double 2px #0174b0;
     border-radius: 10px;
     display: flex;
-    padding: 10px;
+    /* padding: 10px; */
     width: 13em;
     background-color: #0173b014;
     margin: 10px;
     margin-top: 30px;
-    transition: 1s;
+    transition: .5s all ease;
 
    
 }
 .asset:hover .animation_bg{
 
     /* background-color: aqua; */
-    height: 40px;
+    height: 60px;
+    border-radius: 8px;
 
+    
    
 }
 
+.asset:hover .content_asset{
+    color: rgb(255, 255, 255);
+}
+
+.inAsset{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
 .animation_bg{
-    transition: 1s;
+    transition: .5s all ease;
+
     height: 0px;
-    width: 14.5%;
+    width: 200px;
     background: linear-gradient(
         90deg,
         rgba(0, 112, 173, 0.438) 0%,
@@ -39,6 +51,8 @@
     padding-top: 4px;
     padding-left: 13px;
     font-size: 20px;
+    transition: .5s all ease;
+
 }
 .co{
     display: flex;
@@ -47,4 +61,21 @@
 }
 .img_arrow{
     width: 10px;
+}
+
+.assetMain{
+    display: flex;
+}
+
+@media screen and (max-width: 900px){
+    .assetMain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .animation_bg{
+        width: 204px;
+    }
 }

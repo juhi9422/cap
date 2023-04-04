@@ -134,8 +134,8 @@
   color: #0070ad;
 }
 .list_item {
-  padding-left: 10px;
-  margin-bottom: 10px;
+  /* padding-left: 10px;
+  margin-bottom: 10px; */
 }
 .dropdown {
   position: relative;
@@ -265,6 +265,12 @@
   
  
 }
+
+.ag-courses_item a{
+ color: #002b57;
+ transition: all 0.6s ease;
+
+}
 .ag-courses-item_link {
   display: block;
   height: 80px;
@@ -293,7 +299,7 @@
   /* overflow: hidden; */
   font-weight: bold;
   font-size: 18px;
-  color: rgb(0, 0, 0);
+  /* color: rgb(0, 0, 0); */
   z-index: 1;
   align-content: center;
   position: relative;

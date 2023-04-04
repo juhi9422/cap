@@ -1,59 +1,75 @@
-.cardsM{
-  margin: 15px;
-  -webkit-box-shadow: 0px 10px 14px -9px rgba(130,130,130,0.48);
-  -moz-box-shadow: 0px 10px 14px -9px rgba(130,130,130,0.48);
-  box-shadow: 0px 10px 14px -9px rgba(130,130,130,0.48);
-  border-radius: 10px;
-  background-color: rgba(183, 226, 244, 0.217);
-  margin-top: 20px;
+.offCard{
+   display: flex;
+  justify-content: space-around;
+ padding-bottom: 10px;
+ margin-left: 4vw;
+ margin-right: 4vw;
 }
 
-.bgM{
+
+.cdIcon img{
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+
+}
+
+.cdTitle{
+  /* margin-top: -40px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.1em;
+  font-weight: 600;
+  padding-left: 5px;
+  background: rgb(0, 112, 173);
   background: linear-gradient(
     90deg,
-    rgba(2, 124, 189, 0.87) 0%,
-    rgba(18, 172, 219, 0.39) 100%
+    rgba(0, 112, 173, 1) 0%,
+    #12abdb 100%
   );
-position: absolute;
-z-index: -1;
-width: 7%;
-transition: .3s;
-height: 13.5%;
-  border-radius: 10px;
-
+  width: 100%;
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 
-.colM:hover .bgM{
-  width: calc(33.2% - 110px);
-}
-
-.colM:hover .img_iconM{
-  transform: scale(1.05);
-}
-
-.colM:hover{
-  color: aliceblue;
-}
-
-.img_iconM{
-  border-radius: 10px;
-  padding: 6px;
-  margin-top: -20px;
-  width: 70px;
-  height: auto;
-  object-fit: contain;
-  background-color: rgb(211, 229, 233);
-  margin-right: 15px;
-transition: .3s;
-
-}
-
-.contentM{
+.cdCard{
+  padding-bottom: 10px;
+  width: 20vw;
+  /* background-color: aqua; */
+  margin: 2vh;
   display: flex;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
-  padding: 10px;
-  font-weight: 600;
-  font-size: 1.2em;
-  transition: .3s;
+  border-radius: 10px;
+  border: #12abdb 2px solid;
+  transition: .5s all ease;
 
+
+}
+
+.cdCard:hover{
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 900px){
+  .offCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cdCard{
+    width: 80vw;
+    /* background-color: aqua; */
+    margin: 2vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  
+  }
 }
