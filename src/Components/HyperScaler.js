@@ -1,4 +1,9 @@
 import React from "react";
+import aws from "../Images/AWS.webp";
+import google from "../Images/GCP.webp";
+import redhat from "../Images/ibm_redhat.webp";
+import micro from "../Images/Microsoft-Azure.webp";
+
 
 const HyperScaler = () => {
   return (
@@ -11,7 +16,7 @@ const HyperScaler = () => {
                 <p>
                   <img
                     className="content-box-img aligncenter img_hyper"
-                    src="https://x-port.capgemini.com/wp-content/uploads/2022/07/AWS.png"
+                    src={aws}
                   />
                 </p>
                 <div className="main_hyper">
@@ -22,7 +27,7 @@ const HyperScaler = () => {
                       target="_blank"
                       rel="noopener"
                     >
-                      AWS Alliance Page{" "}
+                      AWS Alliance Page
                     </a>
                   </div>
                 </div>
@@ -36,7 +41,7 @@ const HyperScaler = () => {
                 <p>
                   <img
                     className="content-box-img aligncenter img_hyper"
-                    src="https://x-port.capgemini.com/wp-content/uploads/2022/07/Microsoft-Azure.png"
+                    src={micro}
                   />
                 </p>
                 <div className="main_hyper">
@@ -61,7 +66,7 @@ const HyperScaler = () => {
                 <p>
                   <img
                     className="content-box-img aligncenter img_hyper"
-                    src="https://x-port.capgemini.com/wp-content/uploads/2022/07/GCP.png"
+                    src={google}
                   />
                 </p>
                 <div className="main_hyper">
@@ -72,7 +77,7 @@ const HyperScaler = () => {
                       target="_blank"
                       rel="noopener"
                     >
-                      GCP Alliance Page{" "}
+                      GCP Alliance Page
                     </a>
                   </div>
                 </div>
@@ -86,7 +91,7 @@ const HyperScaler = () => {
                 <p>
                   <img
                     className="content-box-img aligncenter img_hyper"
-                    src="https://x-port.capgemini.com/wp-content/uploads/2022/07/ibm_redhat.png"
+                    src={redhat}
                   />
                 </p>
                 <div className="main_hyper">

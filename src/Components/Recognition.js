@@ -1,4 +1,6 @@
 import React from "react";
+import nileson from "../Images/Nelsonhall3.webp";
+import pub from "../Images/public-cloud2.webp"
 
 const Recognition = () => {
   return (
@@ -11,7 +13,7 @@ const Recognition = () => {
                 <p>
                   <img
                     class="content-box-img aligncenter img_rec"
-                    src="https://x-port.capgemini.com/wp-content/uploads/2023/03/Nelsonhall3.png"
+                    src={nileson}
                   />
                 </p>
                 <p className="p_rec">
@@ -36,7 +38,7 @@ const Recognition = () => {
                 <p>
                   <img
                     class="content-box-img aligncenter img_rec"
-                    src="https://x-port.capgemini.com/wp-content/uploads/2023/03/public-cloud2.png"
+                    src={pub}
                   />
                 </p>
                 <p className="p_rec">
